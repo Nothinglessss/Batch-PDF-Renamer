@@ -1,0 +1,42 @@
+{
+  "name": "Batch-Pdf-Renamer",
+  "version": "1.0.0",
+  "description": "Automatic batch PDF renamer",
+  "main": "main.js",
+  "build": {
+    "appId": "com.batchpdfrenamer.app",
+    "asar": true,
+    "asarUnpack": [
+      "Batch PDF Renamer GUI.py"
+    ]
+  },
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "preinstall": "pip install pdfminer.six && pip install mojimoji && pip install pybase64 && pip install regex"
+    },
+  
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^1.8.8"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.4.0",
+    "@sweetalert2/theme-material-ui": "^3.1.4",
+    "bootstrap": "^4.5.0",
+    "electron-packager": "^14.2.1",
+    "express": "^4.17.1",
+    "filereader": "^0.10.3",
+    "jquery": "^3.5.1",
+    "json": "^9.0.6",
+    "json-stringify": "^1.0.0",
+    "pdf-to-base64": "^1.0.2",
+    "popper.js": "^1.16.1",
+    "promise.allsettled": "^1.0.2",
+    "python-shell": "^1.0.8",
+    "q": "^1.5.1",
+    "standard": "^14.3.4",
+    "sweetalert2": "^9.13.1"
+  }
+}

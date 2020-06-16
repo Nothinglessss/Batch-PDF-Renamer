@@ -1,0 +1,8 @@
+directories:
+  output: dist
+  buildResources: build
+appId: com.batchpdfrenamer.app
+asar: true
+asarUnpack:
+  - Batch PDF Renamer GUI.py
+electronVersion: 1.8.8

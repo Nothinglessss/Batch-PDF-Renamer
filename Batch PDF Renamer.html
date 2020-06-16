@@ -1,0 +1,70 @@
+<head>
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" , href="./stylish.css" />
+  <script src="Batch PDF Renamer.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Batch PDF Renamer</h1>
+      <h4>
+        Automatically renames text-based PDF files based on its title! New file
+        will be generated under the subfolder "new" of the current directory.
+      </h4>
+      <h5>
+        NOTE:You will need python and the repos
+        "pdfminer.six","mojimoji","pybase64" and "regex" to use this
+        application. If you do not have the repos intalled, type "pip install
+        (repo name as shown above)" into your command prompt window to install.
+      </h5>
+    </div>
+  </div>
+  <br />
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <input
+          type="button"
+          class="btn btn-primary btn-lg"
+          value="Click to select PDF file"
+          id="loadpdf"
+          onclick="document.getElementById('pdf-selector').click();"
+        />
+        <input
+          type="file"
+          style="display: none;"
+          accept=".pdf"
+          id="pdf-selector"
+          name="pdf-selected"
+          multiple
+        />
+      </div>
+      <div class="col">
+        <button class="btn btn-secondary btn-lg disabled">
+          Drag and Drop File
+        </button>
+      </div>
+    </div>
+  </div>
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"
+  ></script>
+</body>

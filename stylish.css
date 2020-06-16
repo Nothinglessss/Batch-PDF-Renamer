@@ -1,0 +1,22 @@
+.jumbotron {
+  background: -webkit-linear-gradient(
+    -21deg,
+    rgb(240, 62, 81),
+    rgb(227, 132, 24)
+  );
+  background: linear-gradient(-21deg, rgb(240, 62, 81), rgb(227, 132, 24));
+}
+
+.h1 {
+  color: "#696969";
+  font-weight: 700;
+}
+
+/* .swal-text {
+  padding: 17px;
+  border: 1px solid #f0e1a1;
+  display: block;
+  margin: 22px;
+  text-align: center;
+  color: #3b3432;
+} */
