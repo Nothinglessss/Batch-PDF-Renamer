@@ -19,7 +19,7 @@
   
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "^1.8.8"
+    "electron": "^9.1.0"
   },
   "dependencies": {
     "@popperjs/core": "^2.4.0",
